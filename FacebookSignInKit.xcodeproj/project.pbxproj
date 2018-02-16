@@ -10,6 +10,12 @@
 		0E7767A51E37EA14001D2D18 /* FacebookSignInKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E77679B1E37EA14001D2D18 /* FacebookSignInKit.framework */; };
 		0E7767AA1E37EA14001D2D18 /* FacebookSignInKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7767A91E37EA14001D2D18 /* FacebookSignInKitTests.swift */; };
 		0E7767AC1E37EA14001D2D18 /* FacebookSignInKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E77679E1E37EA14001D2D18 /* FacebookSignInKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E7767B71E37EC3E001D2D18 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7767B61E37EC3E001D2D18 /* FBSDKLoginKit.framework */; };
+		0E7767B91E37EC6A001D2D18 /* FacebookSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7767B81E37EC6A001D2D18 /* FacebookSignInController.swift */; };
+		0E7767BB1E37ED27001D2D18 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7767BA1E37ED27001D2D18 /* FBSDKCoreKit.framework */; };
+		0E7767BD1E37FD61001D2D18 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7767BC1E37FD61001D2D18 /* Bolts.framework */; };
+		0E7767BF1E37FE37001D2D18 /* FacebookAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7767BE1E37FE37001D2D18 /* FacebookAccessToken.swift */; };
+		0E7767C11E3800EB001D2D18 /* FacebookLoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7767C01E3800EB001D2D18 /* FacebookLoginResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		0E7767A41E37EA14001D2D18 /* FacebookSignInKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookSignInKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7767A91E37EA14001D2D18 /* FacebookSignInKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSignInKitTests.swift; sourceTree = "<group>"; };
 		0E7767AB1E37EA14001D2D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E7767B61E37EC3E001D2D18 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0E7767B81E37EC6A001D2D18 /* FacebookSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSignInController.swift; sourceTree = "<group>"; };
+		0E7767BA1E37ED27001D2D18 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0E7767BC1E37FD61001D2D18 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0E7767BE1E37FE37001D2D18 /* FacebookAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAccessToken.swift; sourceTree = "<group>"; };
+		0E7767C01E3800EB001D2D18 /* FacebookLoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7767BD1E37FD61001D2D18 /* Bolts.framework in Frameworks */,
+				0E7767B71E37EC3E001D2D18 /* FBSDKLoginKit.framework in Frameworks */,
+				0E7767BB1E37ED27001D2D18 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,10 @@
 		0E77679D1E37EA14001D2D18 /* FacebookSignInKit */ = {
 			isa = PBXGroup;
 			children = (
+				0E7767B51E37EC2B001D2D18 /* Frameworks */,
+				0E7767BE1E37FE37001D2D18 /* FacebookAccessToken.swift */,
+				0E7767C01E3800EB001D2D18 /* FacebookLoginResult.swift */,
+				0E7767B81E37EC6A001D2D18 /* FacebookSignInController.swift */,
 				0E77679E1E37EA14001D2D18 /* FacebookSignInKit.h */,
 				0E77679F1E37EA14001D2D18 /* Info.plist */,
 			);
@@ -84,6 +103,16 @@
 				0E7767AB1E37EA14001D2D18 /* Info.plist */,
 			);
 			path = FacebookSignInKitTests;
+			sourceTree = "<group>";
+		};
+		0E7767B51E37EC2B001D2D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E7767BC1E37FD61001D2D18 /* Bolts.framework */,
+				0E7767BA1E37ED27001D2D18 /* FBSDKCoreKit.framework */,
+				0E7767B61E37EC3E001D2D18 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +178,7 @@
 					0E77679A1E37EA14001D2D18 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K34G3U98RH;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					0E7767A31E37EA14001D2D18 = {
@@ -198,6 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7767C11E3800EB001D2D18 /* FacebookLoginResult.swift in Sources */,
+				0E7767B91E37EC6A001D2D18 /* FacebookSignInController.swift in Sources */,
+				0E7767BF1E37FE37001D2D18 /* FacebookAccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,18 +355,25 @@
 		0E7767B01E37EA14001D2D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K34G3U98RH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
 				INFOPLIST_FILE = FacebookSignInKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.DayOneDigital.FacebookSignInKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,14 +381,20 @@
 		0E7767B11E37EA14001D2D18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K34G3U98RH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
 				INFOPLIST_FILE = FacebookSignInKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.DayOneDigital.FacebookSignInKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,6 +406,7 @@
 		0E7767B31E37EA14001D2D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K34G3U98RH;
 				INFOPLIST_FILE = FacebookSignInKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +419,7 @@
 		0E7767B41E37EA14001D2D18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K34G3U98RH;
 				INFOPLIST_FILE = FacebookSignInKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +448,7 @@
 				0E7767B11E37EA14001D2D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E7767B21E37EA14001D2D18 /* Build configuration list for PBXNativeTarget "FacebookSignInKitTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +457,7 @@
 				0E7767B41E37EA14001D2D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
